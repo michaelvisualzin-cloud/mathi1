@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Michael Visualz | Cinematic Video Editing & Creative Agency</title>
+    <meta
+      name="description"
+      content="Michael Visualz — premium cinematic video editing, branding, and digital media. We create cinematic emotions."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@500;600;700&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="loader" aria-hidden="true">
+      <div class="loader-inner">
+        <div class="loader-logo">MICHAEL VISUALZ</div>
+        <div class="loader-bar"><span></span></div>
+      </div>
+    </div>
+
+    <div class="scroll-progress" role="progressbar" aria-label="Page scroll progress"></div>
+    <canvas id="particles" aria-hidden="true"></canvas>
+    <div class="cursor-glow" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="logo" href="index.html">Michael <span>Visualz</span></a>
+        <button class="menu-btn" type="button" aria-label="Toggle menu" aria-expanded="false">Menu</button>
+        <nav class="nav-links">
+          <a class="active" href="index.html">Home</a>
+          <a href="index.html#about">About</a>
+          <a href="services.html">Services</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero: stock video — swap with assets/videos/hero.mp4 per assets/README.md -->
+      <section class="hero" id="home">
+        <div class="hero-media">
+          <video
+            class="hero-video"
+            autoplay
+            muted
+            loop
+            playsinline
+            poster="https://images.unsplash.com/photo-1485846234645-a62644f84728?w=1920&q=80"
+          >
+            <source
+              src="https://videos.pexels.com/video-files/3129670/3129670-hd_1920_1080_25fps.mp4"
+              type="video/mp4"
+            />
+          </video>
+          <div
+            class="hero-fallback"
+            style="background-image: url('https://images.unsplash.com/photo-1485846234645-a62644f84728?w=1920&q=80')"
+          ></div>
+          <div class="hero-overlay"></div>
+        </div>
+
+        <div class="hero-content">
+          <p class="hero-eyebrow">Premium Creative Agency</p>
+          <h1>MICHAEL VISUALZ</h1>
+          <p class="hero-tagline">We Don't Just Edit Videos — We Create Cinematic Emotions.</p>
+          <p class="hero-sub">
+            5+ Years of Experience • Worked With 150+ Clients • Customer Satisfaction is Our Highest Priority
+          </p>
+          <div class="btn-group">
+            <a href="portfolio.html" class="btn btn-primary">View Portfolio</a>
+            <a href="contact.html" class="btn btn-outline">Contact Us</a>
+          </div>
+        </div>
+
+        <a href="#about" class="scroll-indicator" aria-label="Scroll to about section">
+          <span>Scroll</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 5v14M5 12l7 7 7-7" />
+          </svg>
+        </a>
+      </section>
+
+      <section class="section" id="about">
+        <div class="container">
+          <div class="section-header" data-reveal>
+            <span class="section-eyebrow">Who We Are</span>
+            <h2 class="section-title">About Michael Visualz</h2>
+            <p class="section-subtitle">
+              Professional creative video editing and digital media built for extraordinary cinematic quality.
+            </p>
+          </div>
+
+          <div class="about-grid" data-reveal>
+            <div class="about-copy">
+              <p>
+                Michael Visualz is a professional creative video editing and digital media company focused on
+                delivering extraordinary cinematic quality.
+              </p>
+              <p>We specialize in:</p>
+              <ul class="about-list">
+                <li>Video Editing</li>
+                <li>Reels Editing</li>
+                <li>Branding Editing</li>
+                <li>Poster Design</li>
+                <li>Graphic Design</li>
+                <li>Website Creation</li>
+                <li>Logo Design</li>
+                <li>Wedding Editing</li>
+                <li>Model Shoot Editing</li>
+                <li>Professional Video Shoot &amp; Editing</li>
+              </ul>
+              <p>
+                We have worked with 100+ trusted customers and always focus on creativity, quality, and customer
+                satisfaction.
+              </p>
+            </div>
+            <div class="about-visual glass-card glow-border">
+              <h3>Cinematic Excellence</h3>
+              <p style="color: var(--muted); margin: 0">
+                Every frame is crafted with intention — color, rhythm, and emotion aligned to your brand story.
+              </p>
+            </div>
+          </div>
+
+          <div class="stats-grid" data-reveal>
+            <div class="stat-card">
+              <div class="stat-number" data-count="5" data-suffix="+">0+</div>
+              <div class="stat-label">Years Experience</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number" data-count="150" data-suffix="+">0+</div>
+              <div class="stat-label">Clients Worked</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number" data-count="100" data-suffix="+">0+</div>
+              <div class="stat-label">Trusted Customers</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number" data-count="24" data-suffix="/7">0/7</div>
+              <div class="stat-label">Support</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section testimonials-section">
+        <div class="container">
+          <div class="section-header" data-reveal>
+            <span class="section-eyebrow">Client Love</span>
+            <h2 class="section-title">Client Reviews</h2>
+            <p class="section-subtitle">Trusted by creators, brands, and businesses worldwide.</p>
+          </div>
+
+          <div class="testimonials-wrap" data-reveal aria-live="polite">
+            <div class="testimonials-track">
+              <article class="review-card glass-card glow-border">
+                <div class="review-stars">★★★★★</div>
+                <p class="review-text">
+                  "Michael Visualz transformed our brand reels into cinematic stories. The quality and turnaround
+                  exceeded every expectation."
+                </p>
+                <div class="review-author">Priya Sharma</div>
+                <div class="review-role">Fashion Brand Owner</div>
+              </article>
+              <article class="review-card glass-card glow-border">
+                <div class="review-stars">★★★★★</div>
+                <p class="review-text">
+                  "Our wedding film feels like a movie. Every moment was edited with emotion and perfect pacing.
+                  Highly recommended."
+                </p>
+                <div class="review-author">Rahul &amp; Ananya</div>
+                <div class="review-role">Wedding Clients</div>
+              </article>
+              <article class="review-card glass-card glow-border">
+                <div class="review-stars">★★★★★</div>
+                <p class="review-text">
+                  "Professional, creative, and always responsive. They understood our vision and delivered ads that
+                  actually convert."
+                </p>
+                <div class="review-author">Dev Mehta</div>
+                <div class="review-role">Startup Founder</div>
+              </article>
+              <article class="review-card glass-card glow-border">
+                <div class="review-stars">★★★★★</div>
+                <p class="review-text">
+                  "The model shoot edit was flawless — color grading, transitions, and music sync were all top tier.
+                  True cinematic work."
+                </p>
+                <div class="review-author">Sneha Kapoor</div>
+                <div class="review-role">Model &amp; Influencer</div>
+              </article>
+              <article class="review-card glass-card glow-border">
+                <div class="review-stars">★★★★★</div>
+                <p class="review-text">
+                  "From logo to website to video — Michael Visualz handled everything with luxury-level polish. Our
+                  brand looks premium now."
+                </p>
+                <div class="review-author">Arjun Patel</div>
+                <div class="review-role">Business Owner</div>
+              </article>
+            </div>
+            <div class="testimonial-dots"></div>
+            <div class="testimonial-nav">
+              <button type="button" class="testimonial-prev" aria-label="Previous review">‹</button>
+              <button type="button" class="testimonial-next" aria-label="Next review">›</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container" data-reveal>
+          <div class="cta-band">
+            <h3>Ready For Cinematic Results?</h3>
+            <p>Book your project today and experience editing that moves people.</p>
+            <a href="contact.html" class="btn btn-primary">Start Your Project</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a class="logo" href="index.html">Michael <span>Visualz</span></a>
+            <p>Premium cinematic video editing and creative digital media for brands that demand excellence.</p>
+          </div>
+          <div class="footer-col">
+            <h4>Quick Links</h4>
+            <nav class="footer-links">
+              <a href="index.html">Home</a>
+              <a href="index.html#about">About</a>
+              <a href="services.html">Services</a>
+              <a href="portfolio.html">Portfolio</a>
+              <a href="contact.html">Contact</a>
+            </nav>
+          </div>
+          <div class="footer-col">
+            <h4>Connect</h4>
+            <div class="social-links">
+              <a href="https://www.instagram.com/michael._.visualz/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+              </a>
+              <a href="mailto:michaelvisualz.in@gmail.com" aria-label="Email">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+              </a>
+              <a href="https://wa.me/918110990660" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.881 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">© 2026 Michael Visualz. All rights reserved.</div>
+      </div>
+    </footer>
+
+    <a
+      class="whatsapp-float"
+      href="https://wa.me/918110990660"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Chat on WhatsApp"
+    >
+      <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.881 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    </a>
+
+    <script src="script.js"></script>
+  </body>
+</html>
